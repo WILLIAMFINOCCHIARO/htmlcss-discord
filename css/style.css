@@ -9,12 +9,14 @@
   width: 80%;
   height: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 
 
 header {
   height: 100px;
+  background-color: #255ee9;
 }
 
  /* /settings layout header */
@@ -30,11 +32,12 @@ header nav {
   display: inline-block;
 }
 
-.list ul li {
+.list ul li a {
   color: white;
   list-style: none;
   text-transform: capitalize;
   font-family: 'Times New Roman', Times, serif;
+  margin:0 10px;
 }
 
 .button button {
@@ -54,8 +57,57 @@ header nav {
 /* settings layout jambo */
 .jambo {
   height: 500px;
-  background-image: url(../img/item1.svg);
+  background-image: url(../img/jumbo.png);
+  background-size: 100% 100%;
 }
+
+.jambo .container .title {
+  position: absolute;
+  top:30%;
+  left:50%;
+  transform: translate(-50%,-30%);
+}
+
+
+.jambo .container h1 {
+  color:white;
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+}
+
+.container p {
+  color:white;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 30px;
+}
+
+.container .title a {
+  
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  display:inline-block;
+  padding:10px 20px;
+  margin:20px 10px;
+}
+
+.title a i {
+  margin-right:10px;
+}
+
+.title :nth-child(3) {
+  background-color: white;
+  color:black;
+}
+
+.title :nth-child(4) {
+  background-color: black;
+  color:white;
+}
+
 
 /* /settings layout jambo */
 
@@ -63,17 +115,6 @@ header nav {
 
 
 /* debug  */
-.debug header {
-  background-color: crimson;
-}
-
-.debug header nav {
-  background-color: hotpink;
-}
-
-.debug .jambo {
-  background-color: blue;
-}
 
 .debug footer {
   height: 500px;
