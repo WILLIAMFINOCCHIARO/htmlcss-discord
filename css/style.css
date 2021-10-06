@@ -156,7 +156,23 @@ main p {
 /* settings main */
 
 
-/* debug  */
+/* settings footer */
+footer {
+  background-color: #23272a;
+}
+
+.top ul li {
+  display: inline-block;
+}
+
+
+
+/* /setting footer */
+
+
+
+
+/* debug 
 
 .debug footer {
   height: 500px;
@@ -171,7 +187,7 @@ main p {
 .debug footer .bottom {
   background-color: yellowgreen;
   height:100px;
-}
+} */
 /* /debug */
 
 
